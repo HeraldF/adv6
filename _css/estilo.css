@@ -3,48 +3,13 @@
   src: url("../_fonts/gilroy-bold.ttf");
 }
 
-.gilroy-bold{
+.gilroy-bold{ 
   font-family: "gilroy-bold";
 }
 
-#menu_container{
-  width: 100%;
-  height: 50px;
+.header ul li a:hover {
 }
 
-#menu{
-  width: 999px;
-  height: 50px;
-  line-height: 50px;
-  margin:0 auto 0 auto;
-  position: right;
-}
-
-#menu ul{
-  font-family: helvetica;
-  margin: auto;
-  list-style-type: none;
-  font-size: 18px;
-}
-
-#menu ul li{
-  float: right;
-  position: relative;
-}
-
-#menu ul li a{
-  text-decoration: none;
-  float: right;
-  display: block;
-  width: auto;
-  line-height: 50px;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-#menu ul li a:hover {
-
-}
 a:before {
   content: "";
   position: absolute;
@@ -71,12 +36,13 @@ a:hover:before {
 }
 
 .zoom img {
-  max-width: 100%;
+  max-width: 90%;
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   float: right;
-  margin-top: 20px;
+  margin-top: 40px;
+  position: relative;
 }
 
 .zoom:hover img {
@@ -85,3 +51,49 @@ a:hover:before {
   transform: scale(1.1);
 }
 
+#tituloadv6{
+  margin-left: 60px;
+  font-size: 30px;
+  padding-top: 60px;
+}
+#logo{
+  padding-left: 20px;
+  padding-bottom: 0px;
+  padding-top: 15px;
+
+}
+
+#texto1{
+  padding-left: 100px;
+}
+#texto2{
+  font-size: 13px;
+  padding-left: 100px;
+}
+.header{
+  margin: 0;
+  padding: 0;
+}
+nav{
+  width: 100%;
+}
+ul{
+  margin: 5px 5px 5px 10px;
+  padding: 0px;
+  padding-bottom: 40px;
+  list-style: none;
+}
+li{
+  float: right;
+}
+.logo img{
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+nav a{
+  width: 100px;
+  display: block;
+  padding: 20px 15px;
+  text-decoration: none;
+}
