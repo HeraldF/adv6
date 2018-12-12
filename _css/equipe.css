@@ -1,63 +1,116 @@
-#menu_container{
-  width: 100%;
-  height: 50px;
+/* 1. Defina a família de fontes padrão como sans-serif. */
+/* 2. Evitar que o tamanho do texto do iOS seja ajustado após a mudança de orientação, sem desabilitar zoom do usuário. */
+/*––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*html {
+  font-family: sans-serif;
+  /* 1 * /
+  -ms-text-size-adjust: 100%;
+  /* 2 * /
+  - webkit-text-size-adjust: 100%;
+  /* 2 * / } */
+  
+@font-face{
+  font-family: "gilroy-bold";
+  src: url("../_fonts/gilroy-bold.ttf");
+
+  font-family: "gilroy-heavy";
+  src: url("../_fonts/gilroy-heavy.ttf");
+
+  font-family: "gilroy-light";
+  src: url("../_fonts/gilroy-light.ttf");
+
+  font-family: "gilroy-medium";
+  src: url("../_fonts/gilroy-medium.ttf");
+
+  font-family: "gilroy-regular";
+  src: url("../_fonts/gilroy-regular.ttf");
 }
 
-#menu{
-  width: 999px;
-  height: 50px;
-  line-height: 50px;
-  margin:0 auto 0 auto;
-  position: right;
+.gilroy-bold{
+  font-family: "gilroy-bold";
 }
 
-#menu ul{
-  font-family: 
-  margin: auto;
-  list-style-type: none;
-  font-size: 17px;
+.gilroy-heavy{
+  font-family: "gilroy-heavy";
 }
 
-#menu ul li{
-  float: right;
+.gilroy-light{
+  font-family: "gilroy-light";
+}
+
+.gilroy-medium{
+  font-family: "gilroy-medium";
+}
+
+.gilroy-regular{
+  font-family: "gilroy-regular";
+}
+
+
+/* HTML5 display definitions */
+/* Corrigir a exibição `block` não definida para nenhum elemento HTML5 no IE 8/9. */
+/* Corrigir a exibição de `block` não definida para` details` ou `summary` no IE 10/11 e Firefox. */
+/* Corrigir o bloco `display` não definido para o` main` no IE 11. */
+/*––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+
+/* 1. Correta a exibição `inline-block` não definida no IE 8/9. */
+/* 2. Normalize o alinhamento vertical do `progresso` no Chrome, Firefox e Opera. */
+/*––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/* Remove margem padrão */
+/*––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+body {
+  margin: 0; }
+
+
+
+/* Consultas de mídia */
+/*––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+.content {
   position: relative;
+  background: white;
+  margin-bottom: 400px;
+  overflow: hidden; }
+  
+.content article {
+  padding: 100px 0;
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center; }
+
+
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid #E1E1E1; 
 }
 
-#menu ul li a{
-  text-decoration: none;
-  float: right;
-  display: block;
-  width: auto;
-  line-height: 50px;
-  padding-right: 10px;
-  padding-left: 10px;
-
-}
-#menu ul li a:hover {
-
-}
-a:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  bottom: 0;
-  left: 0;
-  background-color: #FF8C00;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-a:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-
-/*Inicio Page Equipe*/
+/*Inicio Efeito Imagens Equipe - Page Equipe*/
+/*––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .project {
 
   float: left;
@@ -119,7 +172,7 @@ a:hover:before {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
-.project:hover .project__title, .project:hover .project__category {
+.project:hover .project__title, .project:hover .project__category, .project:hover .project__subcategory {
   -webkit-transform: translateY(0) scale(1);
   -ms-transform: translateY(0) scale(1);
   transform: translateY(0) scale(1);
@@ -184,8 +237,8 @@ a:hover:before {
 
 .project__subcategory {
   opacity: 0;
-  transition: .4s ease;
-  transition-delay: .1s;
+  transition: .5s ease;
+  transition-delay: .2s;
   -webkit-transform: translateY(40px) scale(0);
   -ms-transform: translateY(40px) scale(0);
   transform: translateY(40px) scale(0);
@@ -197,4 +250,7 @@ a:hover:before {
   font-size: 12px;
   text-decoration: none;
 }
-/*Fim Page Equipe*/
+/*Fim Efeito Imagens Equipe - Page Equipe*/
+
+
+
