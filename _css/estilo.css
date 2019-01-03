@@ -33,16 +33,20 @@ a:hover:before {
 
 .zoom {
   overflow: hidden;
+  display: block;
+  width: 100%;
 }
 
 .zoom img {
-  max-width: 90%;
+  max-width: 120%;
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   float: right;
   margin-top: 40px;
   position: relative;
+  width: 610px;
+  height: 484px;
 }
 
 .zoom:hover img {
@@ -51,10 +55,12 @@ a:hover:before {
   transform: scale(1.1);
 }
 
-#tituloadv6{
-  margin-left: 60px;
-  font-size: 30px;
-  padding-top: 60px;
+
+//flex-contaner1
+#titleadv6{
+font-size: 40px;
+margin-left: 40px;
+
 }
 #logo{
   padding-left: 20px;
@@ -65,6 +71,7 @@ a:hover:before {
 
 #texto1{
   padding-left: 100px;
+  top: -80px;
 }
 #texto2{
   font-size: 13px;
@@ -89,11 +96,63 @@ li{
 .logo img{
   position: absolute;
   margin-top: 15px;
-  margin-left: 10px;
+  margin-left: 60px;
 }
 nav a{
   width: 100px;
   display: block;
   padding: 20px 15px;
   text-decoration: none;
+}
+/*Start of gracrys*/
+.container{
+  display:flex;
+  margin: 0 0vw;
+  align-items: stretch;
+  width: 80%;
+  position: relative;
+  top: -80px;
+}
+.container article{
+  flex-grow:1;
+  background:  #ff6600;
+  padding: 20px
+}
+.container2{
+  flex-grow:1;
+  display: flex;
+  
+}
+.container2 article:nth-of-type(1){
+  align-self: flex-end;
+  background: orange;
+
+}article{
+  transition: 0.5s background-color;
+}
+article:hover,.container2 article:hover{
+  cursor: pointer;
+  background-color: #ff9933;
+}
+
+#article1{
+  margin-left: 0px;
+  text-align: center;
+  margin-top: -80px;
+  width: 177%;
+}
+
+#article2{
+  background-color: #333333;
+  font-color: white;
+  text-align: center;
+  width: 80%;
+
+}
+
+#article3{
+text-align: center;
+margin-right: -200px;
+margin-top: -100px;
+position: relative;
 }
