@@ -1,3 +1,49 @@
+@font-face{
+    font-family: "gilroy-light";
+    src: url("../_fonts/gilroy-light.ttf");
+}
+
+@font-face{
+    font-family: "gilroy-regular";
+    src: url("../_fonts/gilroy-regular.ttf");
+}
+
+@font-face{
+    font-family: "gilroy-medium";
+    src: url("../_fonts/gilroy-medium.ttf");
+}
+
+@font-face{
+    font-family: "gilroy-bold";
+    src: url("../_fonts/gilroy-bold.ttf");
+}
+
+@font-face{
+    font-family: "gilroy-heavy";
+    src: url("../_fonts/gilroy-heavy.ttf");
+}
+
+.gilroy-light { 
+    font-family: "gilroy-light";
+}
+
+.gilroy-regular { 
+    font-family: "gilroy-regular";
+}
+
+.gilroy-medium { 
+    font-family: "gilroy-medium";
+}
+
+.gilroy-bold { 
+    font-family: "gilroy-bold";
+}
+
+.gilroy-heavy { 
+    font-family: "gilroy-heavy";
+}
+
+
 body, html{
 	margin:0;
 	padding: 0;
@@ -5,17 +51,6 @@ body, html{
 	overflow-x:hidden;
 }
 
-
-
-
-@font-face{
-  font-family: "gilroy-bold";
-  src: url("../_fonts/gilroy-bold.ttf");
-}
-
-.gilroy-bold{ 
-  font-family: "gilroy-bold";
-}
 
 .header ul li a:hover {
 }
