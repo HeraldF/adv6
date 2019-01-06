@@ -78,8 +78,11 @@ margin-left: 40px;
   padding-left: 100px;
 }
 .header{
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  min-height: 100px;
+
 }
 nav{
   width: 100%;
@@ -127,13 +130,9 @@ nav a{
   align-self: flex-end;
   background: orange;
 
-}article{
-  transition: 0.5s background-color;
 }
-article:hover,.container2 article:hover{
-  cursor: pointer;
-  background-color: #ff9933;
-}
+
+
 
 #article1{
   margin-left: 0px;

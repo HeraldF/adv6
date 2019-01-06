@@ -1,283 +1,207 @@
-/* 1. Defina a família de fontes padrão como sans-serif. */
-/* 2. Evitar que o tamanho do texto do iOS seja ajustado após a mudança de orientação, sem desabilitar zoom do usuário. */
-/*––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-/*html {
-  font-family: sans-serif;
-  /* 1 * /
-  -ms-text-size-adjust: 100%;
-  /* 2 * /
-  - webkit-text-size-adjust: 100%;
-  /* 2 * / } */
-  
 @font-face{
-  font-family: "gilroy-bold";
-  src: url("../_fonts/gilroy-bold.ttf");
-
-  font-family: "gilroy-heavy";
-  src: url("../_fonts/gilroy-heavy.ttf");
-
-  font-family: "gilroy-light";
-  src: url("../_fonts/gilroy-light.ttf");
-
-  font-family: "gilroy-medium";
-  src: url("../_fonts/gilroy-medium.ttf");
-
-  font-family: "gilroy-regular";
-  src: url("../_fonts/gilroy-regular.ttf");
+    font-family: "gilroy-light";
+    src: url("../_fonts/gilroy-light.ttf");
 }
 
-.gilroy-bold{
-  font-family: "gilroy-bold";
+@font-face{
+    font-family: "gilroy-regular";
+    src: url("../_fonts/gilroy-regular.ttf");
 }
 
-.gilroy-heavy{
-  font-family: "gilroy-heavy";
+@font-face{
+    font-family: "gilroy-medium";
+    src: url("../_fonts/gilroy-medium.ttf");
 }
 
-.gilroy-light{
-  font-family: "gilroy-light";
+@font-face{
+    font-family: "gilroy-bold";
+    src: url("../_fonts/gilroy-bold.ttf");
 }
 
-.gilroy-medium{
-  font-family: "gilroy-medium";
+@font-face{
+    font-family: "gilroy-heavy";
+    src: url("../_fonts/gilroy-heavy.ttf");
 }
 
-.gilroy-regular{
-  font-family: "gilroy-regular";
+.gilroy-light { 
+    font-family: "gilroy-light";
+}
+
+.gilroy-regular { 
+    font-family: "gilroy-regular";
+}
+
+.gilroy-medium { 
+    font-family: "gilroy-medium";
+}
+
+.gilroy-bold { 
+    font-family: "gilroy-bold";
+}
+
+.gilroy-heavy { 
+    font-family: "gilroy-heavy";
 }
 
 
-/* HTML5 display definitions */
-/* Corrigir a exibição `block` não definida para nenhum elemento HTML5 no IE 8/9. */
-/* Corrigir a exibição de `block` não definida para` details` ou `summary` no IE 10/11 e Firefox. */
-/* Corrigir o bloco `display` não definido para o` main` no IE 11. */
-/*––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
-  display: block; }
 
 
-/* 1. Correta a exibição `inline-block` não definida no IE 8/9. */
-/* 2. Normalize o alinhamento vertical do `progresso` no Chrome, Firefox e Opera. */
-/*––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-  /* 1 */
-  vertical-align: baseline;
-  /* 2 */ }
-
-/* Evite que os navegadores modernos exibam `audio` sem controles. */
-/* Remova o excesso de altura nos dispositivos iOS 5. */
-/*––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-audio:not([controls]) {
-  display: none;
-  height: 0; }
 
 
-/* Remove margem padrão */
-/*––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
 body {
-  margin: 0; }
+    background-color: white;
+}
 
 
 
-/* Consultas de mídia */
-/*––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-.content {
-  position: relative;
-  background: white;
-  margin-bottom: 400px;
-  overflow: hidden; }
-  
-.content article {
-  padding: 100px 0;
-  max-width: 640px;
-  margin: 0 auto;
-  text-align: center; }
 
+
+
+
+
+
+.clothes-pics {
+ 
+    width: 100%;
+    min-height: 331px;
+    margin-top: 100px;
+    margin-bottom: 280px;
+    text-align: center;
+}
+
+
+
+.clothes-pics figure {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: all 0.4s ease-in-out;
+}
+
+.clothes-pics figure.is-showing {
+    opacity: 1;
+    transform: translateX(0px); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.content1 article {
+
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: center; 
+    margin-bottom: 350px;
+}
 
 hr {
-  margin-top: 3rem;
-  margin-bottom: 3.5rem;
-  border-width: 0;
-  border-top: 1px solid #F58220; 
-  color: #F58220;
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+    border-width: 0;
+    border-top: 2px solid #F58220; 
+    color: #F58220;
+    text-align: center;
 }
 
-.container:after, .row:after, .u-cf {
-  content: "";
-  display: table;
-  clear: both; }
 
-.columns {
-  width: 100%;
-  float: left;
-  box-sizing: border-box; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container2 {
+
+    width: 1115px;
+    min-height: 500px;
+    margin: 0 auto;
+    margin-bottom: 350px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
 }
 
-.column, .columns {
-  margin-left: 4%; 
+.container2 .box {
+    position: relative;
+    width: 258px;
+    height: 258px;
+    background-color: #ff0;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
 }
 
-.column:first-child, .columns:first-child {
-  margin-left: 0; 
-}
-/*Inicio Efeito Imagens Equipe - Page Equipe*/
-/*––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-.project {
-
-  float: left;
-  margin-right: 5%;
+.container2 .box .imgBox {
+    position: relative;
+    overflow: hidden;
 }
 
-.project__image {
-  display: block;
-  position: relative;
+.container2 .box .imgBox img {
+    max-width: 100%;
+    transition: transform 2s;
 }
 
-.project__image img {
-  width: 100%;
-  max-width: 100%;
-  display: block;
+.container2 .box:hover .imgBox img {
+    transform: scale(1.2);
 }
 
-.project__image:after {
-  content: " ";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4));
-  transition: opacity .3s ease;
-  opacity: 0;
+.container2 .box .details {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0,0,0,.7);
+    transform: scaleY(0);
+    transition: transform .5s;
 }
 
-.project__card {
-  position: relative;
-  will-change: transform;
-  transition: box-shadow .3s ease;
-  box-shadow: 0 10px 30px transparent;
+.container2 .box:hover .details {
+    transform: scaleY(1);
 }
 
-.project__card.hover-in {
-  transition: -webkit-transform .2s ease-out;
-  transition: transform .2s ease-out;
-  transition: transform .2s ease-out, -webkit-transform .2s ease-out;
+.container2 .box .details .content2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-55%);
+    text-align: center;
+    padding: 5px;
+    color: #fff;
 }
 
-.project__card.hover-out {
-  transition: -webkit-transform .2s ease-in;
-  transition: transform .2s ease-in;
-  transition: transform .2s ease-in, -webkit-transform .2s ease-in;
+.container2 .box .details .content2 h1 {
+
+    font-size: 24px;
+    color: #F58220;
 }
 
-.project:hover .project__card { 
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); 
+.container2 .box .details .content2 h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #F49751;
 }
 
-.project:hover .project__image:after { 
-    opacity: 1; 
+.container2 .box .details .content2 p {
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 14px;
+    color: #fff;
 }
-
-.project:hover .project__detail {
-  border-width: 6px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-}
-
-.project:hover .project__title, .project:hover .project__category, .project:hover .project__subcategory {
-  -webkit-transform: translateY(0) scale(1);
-  -ms-transform: translateY(0) scale(1);
-  transform: translateY(0) scale(1);
-  opacity: 1;
-}
-
-.project__detail {
-  position: absolute;
-  left: 10px;
-  right: 10px;
-  top: 10px;
-  bottom: 10px;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  text-align: center;
-  pointer-events: none;
-  -webkit-transform: translateZ(30px);
-  transform: translateZ(15px);
-  border: 0 solid #F58220;
-  transition: border .4s ease;
-}
-
-.project__title {
-  margin: 0 0 10px;
-  font-size: 26px;
-  font-weight: 700;
-  transition: .4s ease;
-  opacity: 0;
-  -webkit-transform: translateY(40px) scale(0);
-  -ms-transform: translateY(40px) scale(0);
-  transform: translateY(40px) scale(0);
-  will-change: transform;
-}
-
-.project__title a { 
-  color: white;
-  text-decoration: none;
-}
-
-.project__category {
-  opacity: 0;
-  transition: .4s ease;
-  transition-delay: .2s;
-  -webkit-transform: translateY(40px) scale(0);
-  -ms-transform: translateY(40px) scale(0);
-  transform: translateY(40px) scale(0);
-  will-change: transform;
-}
-
-.project__category a {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 16px;
-  text-decoration: none;
-}
-
-.project__subcategory {
-  opacity: 0;
-  transition: .8s ease;
-  transition-delay: .2s;
-  -webkit-transform: translateY(40px) scale(0);
-  -ms-transform: translateY(40px) scale(0);
-  transform: translateY(40px) scale(0);
-  will-change: transform;
-}
-
-.project__subcategory a {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 12px;
-  text-decoration: none;
-}
-/*Fim Efeito Imagens Equipe - Page Equipe*/
-
-
-

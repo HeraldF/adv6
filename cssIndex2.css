@@ -1,0 +1,89 @@
+@font-face{
+  font-family: "gilroy-bold";
+  src: url("../_fonts/gilroy-bold.ttf");
+}
+
+.gilroy-bold{ 
+  font-family: "gilroy-bold";
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+.container {
+	width: 1120px;
+	min-height: 500px;
+	margin-top: 70px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.container .box {
+	position: relative;
+	width: 258px;
+	height: 258px;
+	background-color: #ff0;
+	margin: 10px;
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+.container .box .imgBox {
+	position: relative;
+	overflow: hidden;
+}
+
+.container .box .imgBox img {
+	max-width: 100%;
+	transition: transform 2s;
+}
+
+.container .box:hover .imgBox img {
+	transform: scale(1.2);
+}
+
+.container .box .details {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	bottom: 10px;
+	right: 10px;
+	background: rgba(0,0,0,.7);
+	transform: scaleY(0);
+	transition: transform .5s;
+}
+
+.container .box:hover .details {
+	transform: scaleY(1);
+}
+
+.container .box .details .content {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-55%);
+	text-align: center;
+	padding: 5px;
+	color: #fff;
+}
+
+.container .box .details .content h1 {
+
+	font-size: 24px;
+	color: #F58220;
+}
+
+.container .box .details .content h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	color: #F49751;
+}
+
+.container .box .details .content p {
+	margin: 10px 0 0;
+	padding: 0;
+	font-size: 14px;
+	color: #fff;
+}
