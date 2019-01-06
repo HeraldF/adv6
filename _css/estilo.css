@@ -1,3 +1,13 @@
+body, html{
+	margin:0;
+	padding: 0;
+	width: 100vw;
+	overflow-x:hidden;
+}
+
+
+
+
 @font-face{
   font-family: "gilroy-bold";
   src: url("../_fonts/gilroy-bold.ttf");
@@ -9,7 +19,9 @@
 
 .header ul li a:hover {
 }
-
+a{
+	color: black;
+}
 a:before {
   content: "";
   position: absolute;
@@ -35,6 +47,7 @@ a:hover:before {
   overflow: hidden;
   display: block;
   width: 100%;
+
 }
 
 .zoom img {
@@ -56,11 +69,18 @@ a:hover:before {
 }
 
 
-//flex-contaner1
+#titleadv6 .orange{
+	background: orange;
+	height: 20px;
+	width: 80px;
+	position: relative;
+	left: -130px;
+	top:120px;
+}
 #titleadv6{
 font-size: 40px;
 margin-left: 40px;
-
+padding-left: 80px;
 }
 #logo{
   padding-left: 20px;
@@ -74,15 +94,12 @@ margin-left: 40px;
   top: -80px;
 }
 #texto2{
-  font-size: 13px;
+  font-size: 15px;
   padding-left: 100px;
 }
 .header{
-  margin: 0px;
-  padding: 0px;
-  width: 100%;
-  min-height: 100px;
-
+  margin: 0;
+  padding: 0;
 }
 nav{
   width: 100%;
@@ -110,16 +127,25 @@ nav a{
 /*Start of gracrys*/
 .container{
   display:flex;
+
   margin: 0 0vw;
   align-items: stretch;
-  width: 85%;
+  width: 86%;
   position: relative;
-  top: -80px;
+  top: -152px;
+  color: white;
+  
 }
 .container article{
   flex-grow:1;
-  background:  #ff6600;
-  padding: 20px
+   background: linear-gradient(
+      rgba(253, 106, 2, 0.6), 
+      rgba(253, 106, 2, 0.6)
+    ), url(../_imagens/bgs/img1-1.jpg);
+  padding: 20px;
+  opacity: 0.8;
+  transition: opacity 0.5 ease;
+
 }
 .container2{
   flex-grow:1;
@@ -128,11 +154,36 @@ nav a{
 
 .container2 article:nth-of-type(1){
   align-self: flex-end;
-  background: orange;
-
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ), url(../_imagens/bgs/img2.jpg);
+  background-size: cover;
+opacity: 0.8;
+  transition: all 0.5 ease;
 }
 
+.container2 article:nth-of-type(2){
+ 
+  background: linear-gradient(
+      rgba(255, 101, 0, 0.7), 
+      rgba(255, 101, 0, 0.7)
+    ), url(../_imagens/bgs/img3-1.jpg);
+  background-size: cover;
+  
+  opacity: 0.8;
+  transition: opacity 0.5 ease;
+}
 
+ /*.container2 article:hover, .container2:hover, 
+#article1:hover, .container{
+	
+  opacity: 1;
+
+}*/
+.hover{
+	opacity:1;
+}
 
 #article1{
   margin-left: 0px;
@@ -159,13 +210,131 @@ position: right;
 .container3{
   flex-grow:1;
   display: flex;
+  height: 200px;
+
+}
+.container3 .orange{
+	background: orange;
+	height: 20px;
+	width: 80px;
+	position: relative;
+	left: -40px;
+	top: -20px;
+
+}
+
+.arrow-down{
+	width: 80px;
+	position: relative;
+	top: 80px;
+}
+.arrow-top{
+	width: 80px;
+	position: relative;
+	top: 130px;
+	left: 420px;
+}
+.arrow{
+	width: 80px;
+	position: relative;
+
 }
 
 #article4{
-  background-color: #333333;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ), url(../_imagens/bgs/img4-3.jpg);
+  background-size: 100% 140%;
   font-color: white;
   text-align: center;
   width: 58%;
-  height: 130%;
+  height: 150%;
   margin-top: -60px;
+  padding: 10px;
+  color: white;
+  //transition: all 0.5s ease;
+  padding: 40px 20px 20px 20px;
+  opacity: 0.8;
+}
+
+#article4:hover{
+	
+	opacity: 1;
+
+}
+
+/*#### Map and Footer ####*/
+.divider{
+	margin-bottom: 140px;
+}
+.map{
+	height: 500px;
+	width: 100vw;
+	background-color: #f1f1f1;
+}
+.map iframe{
+	width: 100%;
+}
+.bottom-menu{
+	display: flex;
+	flex-flow: column nowrap;
+	
+	justify-content: center;
+	background: #f1f1f1;
+	
+}
+.bottom-menu nav {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+}
+.bottom-menu > nav:nth-of-type(1) a{
+	padding: 0 30px;
+}
+.bottom-menu > nav:nth-of-type(2) a{
+	padding: 20px 0;
+}
+.bottom-menu nav{
+	display: flex;
+}
+.bottom-menu nav img{
+	width: 40px;
+}
+
+
+/* ## Footer ## */
+footer{
+	height: 200px;
+}
+footer{
+	background: url(../_imagens/bgs/footer.jpg) no-repeat;
+	background-size:100%;
+}
+
+@media (max-width: 800px) {
+  .header nav {
+    display: none;
+  }
+.container{
+	flex-wrap: wrap;
+}
+.container2{
+	flex-wrap: wrap;
+}
+.container2 #article3{
+	display: none;
+}
+.container3 div{
+	display: none;
+}
+#article4{
+	flex:1; 
+}
+}
+@media (max-width: 925px) {
+  #texto1{
+  	display: none;
+  }
+
 }

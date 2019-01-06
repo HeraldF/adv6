@@ -6,6 +6,9 @@
 
     <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="_css/estilo.css">
+           <script src="_javascript/jquery-1.12.1.min.js"></script>
+    
+    ik
 </head>
 <body>
     <header class="header">        
@@ -19,7 +22,7 @@
                     <li><a href="#"><p class="gilroy-bold">cases</p></a></li>
                     <li><a href="#"><p class="gilroy-bold">agência</p></a></li>
                 </ul>
-        </nav>
+            </nav>
         <!-- fim menu -->
     </header>
   <div class="flex-container1">
@@ -27,33 +30,74 @@
         <img  src="_imagens/predio.png">
         <div class="text-item">
     </div>
-    <div id="titleadv6" style="margin-left: 50px; font-size: 33px">
+    <div id="titleadv6" style="margin-left: 50px; font-size: 33px"><div class="orange"></div>
         <h1> <p class="gilroy-bold"> Somos a <br />ADV6</h1></p>
     </div></div>
     <div id="texto1" style="margin-left: 50px; position: relative; top: -290px;">
         <h3><p class="gilroy-bold">Não fazemos a menor ideia. <br />Fazemos a maior.</h3></a>
+        	<img src="_imagens/black arrow.png" alt="white arrow" class="arrow-top">
     </div>
-    <div id="texto2" style="margin-left: 50px; position: relative; top: -290px;">
+    <div id="texto2" style="margin-left: 50px; position: relative; top: -350px;">
         <p class="gilroy-bold">Passa aqui! <br/> Tem playstation, café, <br />cerveja e muita criatividade. </a>
     </div>  
 
-<!---**Start of gracrys** -->
+<!---Main content -->
 <div class="container">
-  <article id="article1"> <p class="gilroy-bold"> Artigo 1  <br><br><br>Lorem ipsum dolor sit amet consectetur, adipiscing  elit auctor dignissim ex nascetur, vitae consequat <br> laoreet vehicula. Vitae per convallis non integer suspendisse <br>dignissim nostra duis eu consectetur euismod, lorem nisl
+  <article id="article1"> <p class="gilroy-bold"> Teresina 165 anos  <br><br><br>Lorem ipsum dolor sit amet consectetur, adipiscing  elit auctor dignissim ex nascetur, vitae consequat <br> laoreet vehicula. Vitae per convallis non integer suspendisse <br>dignissim nostra duis eu consectetur euismod, lorem nisl
+  	<img src="_imagens/white arrow.png" alt="white arrow" class="arrow-down">
   </article>
   
-    <div class="container2"><article id="article2"> <p class="gilroy-bold"> Artigo 2 <br><br><br>Lorem ipsum dolor sit amet consectetur, adipiscing  elit auctor dignissim ex nascetur, vitae consequat 
+    <div class="container2"><article id="article2"> <p class="gilroy-bold"> Inthegra <br><br><br>Lorem ipsum dolor sit amet consectetur, adipiscing  elit auctor dignissim ex nascetur, vitae consequat 
   </article>
-    <article id="article3"> <p class="gilroy-bold"> Artigo 3 <br><br><br>Lorem ipsum dolor sit amet consectetur, <br> adipiscing  elit auctor dignissim ex nascetur
+    <article id="article3"> <p class="gilroy-bold"> Livraria Anchieta <br><br><br>Lorem ipsum dolor sit amet consectetur, <br> adipiscing  elit auctor dignissim 
+      
       </article></div>
 </div>
 
 <div class="container3">
- 	<article id="article4"> <p class="gilroy-bold"> Artigo 4  <br><br><br>Lorem ipsum dolor sit amet consectetur, adipiscing  elit auctor dignissim ex nascetur, vitae consequat <br> laoreet vehicula. Vitae per convallis non integer suspendisse <br>dignissim nostra duis eu consectetur euismod, lorem nisl <br> dignissim nostra duis eu consectetur euismod, lorem nisl dignissim nostra duis eu consectetur euismod, lorem nisl dignissim nostra duis eu consectetur euismod, lorem nisl
+ 	<article id="article4"> <p class="gilroy-bold"> 
   	</article>
-
-
+  	<div class="orange"> </div>
+<div>
+	<h2><p class="gilroy-bold"> HUT 10 Anos de Vidas <br></h2><br></p>
+	<p class="gilroy-bold">Lorem ipsum dolor sit amet consectetur adipiscing  elit auctor dignissim</p>
+	<img src="_imagens/black arrow.png" alt="arrow" class="arrow">
 </div>
+</div>
+<div class="divider">
+	</div>
+<div class="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.165984247954!2d-42.78325036006749!3d-5.076831335904785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x78e3a1f01a92323%3A0x31f293a66af016d4!2sADV6!5e0!3m2!1spt-BR!2sbr!4v1546658278262" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+<div class="bottom-menu">
+	 <nav>
+               
+                    <a href="_interface/equipe.html"><p class="gilroy-bold">equipe</p></a></li>
+                    <a href="#"><p class="gilroy-bold">cases</p></a></li>
+                    <a href="#"><p class="gilroy-bold">agência</p></a></li>
+                
+    </nav>
+    <nav>
+    	<a href="#"><img src="_imagens/icons/ig.png" alt="instagram"></a>
+    	<a href="#"><img src="_imagens/icons/fb.png" alt="instagram"></a>
+    	<a href="#"><img src="_imagens/icons/yt.png" alt="instagram"></a>
+    </nav>
+</div>
+<footer>
 
+</footer>
+<script> 
+
+	$("article").hover(
+		  function() {
+    $(this).css('opacity', 1).css('cursor','pointer').css('transition', 'all 0.3s')
+  },
+  function() {
+    $(this).css('opacity', 0.8)
+  }
+);
+
+
+</script>
 </body>
 </html>
