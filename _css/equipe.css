@@ -47,17 +47,9 @@
 
 
 
-
-
-
 body {
     background-color: white;
 }
-
-
-
-
-
 
 
 
@@ -71,8 +63,6 @@ body {
     text-align: center;
 }
 
-
-
 .clothes-pics figure {
     opacity: 0;
     transform: translateX(30px);
@@ -83,14 +73,6 @@ body {
     opacity: 1;
     transform: translateX(0px); 
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -111,17 +93,6 @@ hr {
     color: #F58220;
     text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
