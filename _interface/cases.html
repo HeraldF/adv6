@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Cases</title>
+        <link rel="shortcun icon" type="image/x-png" href="../_imagens/icone-adv6.png"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../_css/estilo.css">
+        <link rel="stylesheet" type="text/css" href="../_css/equipe.css">
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../_css/cases.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    </head>
+    <body>
+        <header class="header">        
+                <!-- inicio menu -->
+                <div class="logo">
+                    <a href="../index.html"><img src="../_imagens/iconadv6.png"></a>
+                </div>
+            
+                    <nav>
+                    <ul>
+                        <li><a href="equipe.html"><p class="gilroy-bold">equipe</p></a></li>
+                        <li><a href="#"><p class="gilroy-bold">cases</p></a></li>
+                        <li><a href="../index.html"><p class="gilroy-bold">agência</p></a></li>
+                    </ul>
+                </nav>
+                <!-- fim menu -->
+        </header>
+        <br/>
+        <section class="container-body">
+            <h2 class="center-text"><p class="gilroy-bold">Trabalhos</p></h2>
+            <hr/>
+            <!-- Para alterar as imagens deve-se ir ao arquivo de estilo 'body' e altera o path da imagens-->
+            <div class="row">
+                <div class="box img" id="imagem-1"></div>
+                <div class="box img" id="imagem-2"></div>
+                <div class="box img" id="imagem-3"></div>
+                <div class="box img" id="imagem-4"></div>
+            </div>
+
+            <div class="row">
+                <div class="box img" id="imagem-5"></div>
+                <div class="box img" id="imagem-6"></div>
+                <div class="box img" id="imagem-7"></div>
+                <div class="box img" id="imagem-8"></div>
+            </div>
+        </section>
+        
+        <section class="container-body">
+                <h2 class="center-text"><p class="gilroy-bold">Vídeos</p></h2>
+                <hr/>
+    
+                <div class="row">
+                    <div class="box">
+                        <iframe class="video" src="https://www.youtube.com/embed/2oM1EUG_7_U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="outline" onclick="showVideo('video1')"></div>
+                    </div>
+
+                    <div class="box">
+                        <iframe class="video" src="https://www.youtube.com/embed/9zICYyUhMrQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="outline" onclick="showVideo('video2')"></div>
+                    </div>
+
+                    <div class="box">
+                        <iframe class="video" src="https://www.youtube.com/embed/fgs-rQaESME" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="outline" onclick="showVideo('video3')"></div>
+                    </div>
+
+                    <div class="box">
+                        <iframe class="video" src="https://www.youtube.com/embed/Dzd6NHXdljA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="outline" onclick="showVideo('video4')"></div>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <div class="box">
+                        <iframe class="video" src="https://www.youtube.com/embed/6E_qcOvmEWo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="outline" onclick="showVideo('video5')"></div>
+                    </div>
+    
+                    <div class="box">
+                        <iframe class="video" src="https://www.youtube.com/embed/AUfJdEjg5_Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="outline" onclick="showVideo('video6')"></div>
+                    </div>
+    
+                    <div class="box">
+                        <iframe class="video" src="https://www.youtube.com/embed/ExDU6SpJcug" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="outline" onclick="showVideo('video7')"></div>
+                    </div>
+    
+                    <div class="box">
+                        <iframe class="video" src="https://www.youtube.com/embed/zXfB_rkSrFE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="outline" onclick="showVideo('video8')"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Vídeos -->
+            <!-- Estes são os reproduzidos em tamanho maior, para alterar o vídeo 
+                 é necessário pegar o link embed no YouTube e alterar(src) tanto abaixo 
+                 como na .box correspondente -->
+                 
+            <div class="containerShow" id="video1">
+                <button onclick="Close('video1', 'frame1')"><i class="fas fa-times"></i></button>
+                <iframe id="frame1" class="video" src="https://www.youtube.com/embed/2oM1EUG_7_U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="containerShow" id="video2">
+                <button onclick="Close('video2', 'frame2')"><i class="fas fa-times"></i></button>
+                <iframe id="frame2" class="video" src="https://www.youtube.com/embed/9zICYyUhMrQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="containerShow" id="video3">
+                <button onclick="Close('video3', 'frame3')"><i class="fas fa-times"></i></button>
+                <iframe id="frame3" class="video" src="https://www.youtube.com/embed/fgs-rQaESME" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="containerShow" id="video4">
+                <button onclick="Close('video4', 'frame4')"><i class="fas fa-times"></i></button>
+                <iframe id="frame4" class="video" src="https://www.youtube.com/embed/Dzd6NHXdljA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="containerShow" id="video5">
+                <button onclick="Close('video5', 'frame5')"><i class="fas fa-times"></i></button>
+                <iframe id="frame5" class="video" src="https://www.youtube.com/embed/6E_qcOvmEWo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+    
+            <div class="containerShow" id="video6">
+                <button onclick="Close('video6', 'frame6')"><i class="fas fa-times"></i></button>
+                <iframe id="frame6" class="video" src="https://www.youtube.com/embed/AUfJdEjg5_Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+    
+            <div class="containerShow" id="video7">
+                <button onclick="Close('video7', 'frame7')"><i class="fas fa-times"></i></button>
+                <iframe id="frame7" class="video" src="https://www.youtube.com/embed/ExDU6SpJcug" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+    
+            <div class="containerShow" id="video8">
+                <button onclick="Close('video8', 'frame8')"><i class="fas fa-times"></i></button>
+                <iframe id="frame8" class="video" src="https://www.youtube.com/embed/zXfB_rkSrFE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <!-- overlay -->
+            <div class="overlayShow" id="overlay"></div>
+    </body>
+    <div class="bottom-menu">
+     <nav>
+               
+                    <a href="_interface/equipe.html"><p class="gilroy-bold">equipe</p></a></li>
+                    <a href="#"><p class="gilroy-bold">cases</p></a></li>
+                    <a href="#"><p class="gilroy-bold">agência</p></a></li>
+                
+    </nav>
+            <nav>
+                <a href="https://www.instagram.com/adv6agencia/" target="_blank"><img src="../_imagens/icons/ig.png" alt="instagram"></a>
+                <a href="https://www.facebook.com/agenciaadv6/" target="_blank"><img src="../_imagens/icons/fb.png" alt="faceboook"></a>
+                <a href="https://www.youtube.com/channel/UCpoqFBo0fiC8hzAn7FYJt6w" target="_blank"><img src="../_imagens/icons/yt.png" alt="youtube"></a>
+            </nav>
+</div>
+<footer>
+
+</footer>
+    <script src="../_javascript/actions.js"></script>
+</html>
