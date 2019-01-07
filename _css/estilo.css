@@ -51,12 +51,42 @@ body, html{
 	overflow-x:hidden;
 }
 
+.header a {
+  position: relative;
+  color: #000000;
+  text-decoration: none;  
+}
+
+.header a:before {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 4px;
+  bottom: 0;
+  left: 13px;
+  background-color: #FF8000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  top: 60px;
+}
+
+.header a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
 
 a:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
+
 
 .zoom {
   overflow: hidden;
@@ -168,7 +198,7 @@ nav a{
 }
 
 .container2 article:nth-of-type(1){
-  align-self: flex-end;
+  /* align-self: flex-end; */
   background: linear-gradient(
       rgba(0, 0, 0, 0.7), 
       rgba(0, 0, 0, 0.7)
@@ -212,13 +242,13 @@ opacity: 0.8;
   font-color: white;
   text-align: center;
   width: 80%;
-  height: 100%;
+  height: 110%;
 }
 
 #article3{
 text-align: center;
 margin-right: -200px;
-margin-top: -100px;
+margin-top: -130px;
 position: right;
 }
 
@@ -265,7 +295,7 @@ position: right;
   text-align: center;
   width: 58%;
   height: 150%;
-  margin-top: -60px;
+  margin-top: -90px;
   padding: 10px;
   color: white;
   //transition: all 0.5s ease;
@@ -323,7 +353,7 @@ footer{
 	height: 200px;
 }
 footer{
-	background: url(../_imagens/bgs/footer.jpg) no-repeat;
+	background: url(../_imagens/bgs/footer.png) no-repeat;
 	background-size:100%;
 }
 
